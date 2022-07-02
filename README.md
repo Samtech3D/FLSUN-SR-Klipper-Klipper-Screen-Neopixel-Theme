@@ -1,15 +1,15 @@
 If you like my Work Buy Me a Coffee!
 
-[ ![Download](https://github.com/Samtech3D/FLSUN-Super-Racer-Klipper-Klipper-Screen-Neopixel-Robin-nano-V3/blob/main/img/Paypal.png) ](https://www.paypal.me/samiartmedia)
+[ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Paypal.png) ](https://www.paypal.me/samiartmedia)
 
 **This repository contains settings for Klipper-Klipper screen and neopixel For FLSUN Super Racer with the necessary scripts and macros using robin nano V3 Motherboard "**<br /><br />
 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-Super-Racer-Klipper-Klipper-Screen-Neopixel-Robin-nano-V3/blob/main/img/repository-flsun.png" />
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/repository-flsun.png" />
 
 
 
 ## References
-<img align="center" width=100 src="https://github.com/Samtech3D/FLSUN-Super-Racer-Klipper-Klipper-Screen-Neopixel-Robin-nano-V3/blob/main/img/klipper.png" />
+<img align="center" width=100 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/klipper.png" />
 
 - https://www.klipper3d.org/
 - https://github.com/th33xitus/kiauh
@@ -44,7 +44,7 @@ git clone https://github.com/th33xitus/kiauh.git
   #### 3.Fluidd or Mansail Or Both using different port for the 2nd install exp:81(I add theme For Mainsail )
   #### 4.Klipper Screen
 
-### build firmware and flash your modherboard
+### Build firmware and flash your modherboard
 - Open ssh to compile the micro-controller code, start by running these commands  
 
 ```
@@ -53,32 +53,34 @@ make menuconfig
 
 ```
 
-```
+
 [*] Enable extra low-level configuration options
 Micro-controller Architecture (STMicroelectronics STM32)  --->
       STMicroelectronics STM32
       Processor model (STM32F103)  --->
       Bootloader offset (48KiB bootloader (MKS Robin Nano V3))  --->
       Clock Reference (8 MHz crystal)  ---> 
-    Communication interface (USB (on PA11/PA12))  --->
+      Communication interface (USB (on PA11/PA12))  --->
 
-
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/robin%20nanoV3%20Klipper.PNG" />
 - Press "Q" to exit, and then "Y" to save then run make to flashing image for your printer motherboard
+
 
 ```
 make
 
 ```
-
 if you have problem to flash you firmware enter this command :
 
 ```
 make clean
 git pull
 make
+
 ```
 
 - Open WinSCP App "https://winscp.net/eng/download.php"then connect with your rapberry pi Ip and navigate to:
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/winscp.PNG" />
 
   - /home/pi/klipper/out
   - copy and paste "klipper.bin"to your desktop and change the name to "klipper.bin"
