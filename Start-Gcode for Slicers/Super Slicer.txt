@@ -1,0 +1,64 @@
+;STARTGCODE
+M117 Initializing
+; Set coordinate modes
+G90 ; use absolute coordinates
+M83 ; extruder relative mode
+; Reset speed and extrusion rates
+M220 S100 ; reset speed
+; Set initial warmup temps
+M117 Nozzle preheat
+M104 S200 ; preheat extruder to no ooze temp
+M140 S[first_layer_bed_temperature] ; set bed temp
+M190 S[first_layer_bed_temperature] ; wait for bed final temp
+; Home
+M117 Homing
+G28 ; home all with default mesh bed level
+; Final warmup routine
+M117 Final warmup
+M104 S[first_layer_temperature] ; set extruder final temp
+M109 S[first_layer_temperature] ; wait for extruder final temp
+M190 S[first_layer_bed_temperature] ; wait for bed final temp
+; Prime line routine
+M117 Printing prime line
+G92 E0.0; reset extrusion distance
+G1 X-54.672 Y-95.203 Z0.5 F4000; go outside print area
+G92 E0.0; reset extrusion distance
+G1 E2 F1000 ; de-retract and push ooze
+G3 X38.904 Y-102.668 I54.672 J95.105 E20.999 F1500
+G3 X54.671 Y-95.203 I-38.815 J102.373 E5.45800 F1500
+G92 E0.0
+G1 E-1 F3000 ; retract 1mm
+G1 X52.931 Y-96.185 F1000 ; wipe
+G1 X50.985 Y-97.231 F1000 ; wipe
+G1 X49.018 Y-98.238 F1000 ; wipe
+G1 X0 Y-109.798 F1000
+G1 E1 F1500; de-retract
+G92 E0.0 ; reset extrusion distance
+; Final print adjustments
+M117 Preparing to print
+;M82 ; extruder absolute mode
+
+##########################################################################
+;End Gcode
+
+G92 E0.0 ; prepare to retract
+G1 E-1 F3000; retract to avoid stringing
+; Anti-stringing end wiggle
+{if layer_z < max_print_height}G1 Z{min(layer_z+100, max_print_height)}{endif} F4000 ; Move print head up
+G1 X0 Y120 F3000 ; present print
+; Reset print setting overrides
+G92 E0
+M220 S100 ; reset speed factor to 100%
+; Shut down printer
+M104 S0 ; turn off temperature
+M140 S0 ; turn off heatbed
+M107 ; turn off fan
+M18 S180 ;disable motors after 180s
+Super_racer ;reset to super racer defaults 
+M117 Print finish.
+
+##################################################################################
+
+;Before layer Change G-code
+
+G92 E0 ;reset extrusion distance

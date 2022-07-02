@@ -1,0 +1,25 @@
+;Start-gcode
+
+G21 ; millimeter units
+G90 ; absolute coordinates
+M82 ; E absolute
+M140 S{material_bed_temperature}
+M104 S{material_print_temperature}
+M190 S{material_bed_temperature}
+M109 S{material_print_temperature}
+G28 ; home axis
+SAVE_GCODE_STATE
+RESTORE_GCODE_STATE
+; Lower nozzle and move to start position
+G1 Z150 F4800
+G1 X-130 Y0 Z0.4 F3000
+G92 E0
+; Extrude about 40 mm by printing a 90 degree arc
+G3 X0 Y-100 I120 Z0.5 E40 F1000
+; Retract and move nozzle up
+G92 E0
+G1 E-0.8 F1800
+G0 Z0.5
+G1 E0 F300
+
+;SET_PRESSURE_ADVANCE ADVANCE=0.0
