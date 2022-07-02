@@ -26,6 +26,7 @@ If you like my Work Buy Me a Coffee!
 
 ## Installation
 - Prepping your OS image (i'm using raspbian buster version to use omx-player driver on startup to run my splash  screen )
+- Find Rapberry pi Ip (you can use fing app on your phone)
 - Easy way to install klipper with Kiahu https://github.com/th33xitus/kiauh
     - you need to install git first so run on ssh `sudo apt-get install git -y`.\
     - After git is installed, use the following commands in the given order to download and execute the script:
@@ -43,6 +44,14 @@ git clone https://github.com/th33xitus/kiauh.git
   #### 2.Moonraker
   #### 3.Fluidd or Mansail Or Both using different port for the 2nd install exp:81(I add theme For Mainsail )
   #### 4.Klipper Screen
+
+
+- On your browser tape your Ip to open fluidd interface then import:
+    - .theme (folder)
+    - printer.cfg
+    - klipperScreen.conf
+    - macros.cfg
+    - led_progress.cfg (if you have neopixel installed) 
 
 ### Build firmware and flash your modherboard
 - Open ssh to compile the micro-controller code, start by running these commands  
@@ -83,9 +92,9 @@ make
 <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/winscp.PNG" />
 
   - /home/pi/klipper/out
-  - copy and paste "klipper.bin"to your desktop and change the name to "klipper.bin"
+  - copy and paste "klipper.bin"to your desktop and change the name to "Robin_nano_v3.bin"
   - format your SD card (Attention it is not the one which is in the raceberry) use 32bit 4096ko then put "Robin_nano_v3.bin"
-  - Put your card on your printer then turn-on and wait about 30s
+  - Put sd card on your printer then turn-on and wait about 30s
   - connect your raspberry with your printer using usb cable
 
 - Comback to ssh then tape :
