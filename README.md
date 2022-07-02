@@ -46,12 +46,13 @@ git clone https://github.com/th33xitus/kiauh.git
   #### 4.Klipper Screen
 
 
-- On your browser tape your Ip to open fluidd interface then import:
+- On your browser tape your rpi Ip to open fluidd interface then import:
     - .theme (folder)
     - printer.cfg
     - klipperScreen.conf
     - macros.cfg
     - led_progress.cfg (if you have neopixel installed) 
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Import files.PNG" />   
 
 ### Build firmware and flash your modherboard
 - Open ssh to compile the micro-controller code, start by running these commands  
@@ -115,6 +116,8 @@ It should report something similar to the following:
    - Each printer have  unique serial
 
 - Copy your serial then past'it in printer.cfg 
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/mcu.PNG" />
+
 
 ```
 [mcu]
