@@ -52,7 +52,7 @@ git clone https://github.com/th33xitus/kiauh.git
     - klipperScreen.conf
     - macros.cfg
     - led_progress.cfg (if you have neopixel installed) 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Import files.PNG" />   
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Import_files.jpg" />   
 
 ### Build firmware and flash your modherboard
 - Open ssh to compile the micro-controller code, start by running these commands  
