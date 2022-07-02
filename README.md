@@ -1,4 +1,4 @@
-If you like my Work Buy Me a Coffee!
+If you like my Work Buy Me a Coffee! 🌹❤😍💙
 
 [ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Paypal.png) ](https://www.paypal.me/samiartmedia)
 
@@ -90,11 +90,12 @@ make
 ```
 
 - Open WinSCP App "https://winscp.net/eng/download.php"then connect with your rapberry pi Ip and navigate to:
+- /home/pi/klipper/out
 <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/winscp.PNG" />
 
   - /home/pi/klipper/out
   - copy and paste "klipper.bin"to your desktop and change the name to "Robin_nano_v3.bin"
-  - format your SD card (Attention it is not the one which is in the raceberry) use 32bit 4096ko then put "Robin_nano_v3.bin"
+  - format your SD card (Attention it is not the one which is in the raceberry) use 32bit 4096ko then paste"Robin_nano_v3.bin" 
   - Put sd card on your printer then turn-on and wait about 30s
   - connect your raspberry with your printer using usb cable
 
