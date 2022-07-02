@@ -64,13 +64,13 @@ make menuconfig
 ```
 
 
-[*] Enable extra low-level configuration options
-Micro-controller Architecture (STMicroelectronics STM32)  --->
-      STMicroelectronics STM32
-      Processor model (STM32F103)  --->
-      Bootloader offset (48KiB bootloader (MKS Robin Nano V3))  --->
-      Clock Reference (8 MHz crystal)  ---> 
-      Communication interface (USB (on PA11/PA12))  --->
+### [*] Enable extra low-level configuration options
+### Micro-controller Architecture (STMicroelectronics STM32)  --->
+  ### STMicroelectronics STM32
+  ### Processor model (STM32F103)  --->
+  ### Bootloader offset (48KiB bootloader (MKS Robin Nano V3))  --->
+  ### Clock Reference (8 MHz crystal)  ---> 
+  ### Communication interface (USB (on PA11/PA12))  --->
 
 <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/robin%20nanoV3%20Klipper.PNG" />
 - Press "Q" to exit, and then "Y" to save then run make to flashing image for your printer motherboard
@@ -80,7 +80,7 @@ Micro-controller Architecture (STMicroelectronics STM32)  --->
 make
 
 ```
-if you have problem to flash you firmware enter this command :
+If you have problem to flash you firmware enter this command :
 
 ```
 make clean
@@ -126,13 +126,8 @@ baud: 250000
 restart_method: command
 ```
 
-- Find Rapberry pi Ip (you can use fing app on your phone)
-- On your browser tape your Ip to open fluidd interface then import:
-    - .theme (folder)
-    - printer.cfg
-    - klipperScreen.conf
-    - macros.cfg
-    - led_progress.cfg (if you have neopixel installed)
+- If everythings is correct now to can connect your Mcu with you printer
+
 
 
 
