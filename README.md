@@ -84,7 +84,7 @@ make
 
   - /home/pi/klipper/out
   - copy and paste "klipper.bin"to your desktop and change the name to "klipper.bin"
-  - format your SD card (Attention it is not the one which is in the raceberry) use 32bit 4096ko then put "klipper.bin"
+  - format your SD card (Attention it is not the one which is in the raceberry) use 32bit 4096ko then put "Robin_nano_v3.bin"
   - Put your card on your printer then turn-on and wait about 30s
   - connect your raspberry with your printer using usb cable
 
