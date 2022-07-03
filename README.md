@@ -129,6 +129,16 @@ restart_method: command
 
 - If everythings is correct now to can connect your Mcu with you printer
 
+### Calibrate You Printer
+
+## 1 - Z-offset "you can do this with fluidd or mainsaill terminal or via klipper screen"
+   - Home 
+   - Install Prob
+   - on your trminal tape` PROBE_CALIBRATE `printer probe 5 times then stop at 20mm of the bed at this moment remove your probe
+   - paper test: It involves placing a regular piece of "copy machine paper between the printer's bed and nozzle then inspect the printer's nozzle and bed
+   - Use the TESTZ command to request the nozzle to move closer to the paper. For example `TESTZ z=-1`to go down `TESTZ z=1`   to go up it is also possible to use `TESTZ Z=+` or`TESTZ Z=-` to "bisect" the last position -that is to move to a position half way between two positions
+   - when you got the good zofset adjust run `ACCEPT` then `SAVE_CONFIG` "Finish with ACCEPT or ABORT command to quit"
+
 
 
 
