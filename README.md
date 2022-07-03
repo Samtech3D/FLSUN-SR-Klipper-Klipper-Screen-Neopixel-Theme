@@ -146,9 +146,9 @@ restart_method: command
   - Home
   - prob mast be plugin
   - Run `BED_MESH_CALIBRATE` wait until finish then `SAVE_CONFIG`
-## 4 - Print test 1st layer use"1st_layer_test0.2.gcode" [ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/STL/1st_layer_test0.2.gcode) ] you can find'it alsoo n STL folder
+## 4 - Print test 1st layer use"1st_layer_test0.2.gcode" [ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/STL/1st_layer_test0.2.gcode) ] 
   - Adjust your z-offset while printing 
-  - When you finish run `Z_OFFSET_APPLY_PROBE`to save the new z-offset
+  - When you finish run `Z_OFFSET_APPLY_PROBE`to save the new z-offset `SAVE_CONFIG`
 
 
 
