@@ -12,7 +12,7 @@ M190 S[first_layer_bed_temperature] ; wait for bed final temp
 M117 Homing
 G28 ; home all with default mesh bed level
 BED_MESH_PROFILE LOAD=default
-SET_GCODE_OFFSET Z=0.0
+;SET_GCODE_OFFSET Z=0.0
 M117 Final warmup
 M104 S[first_layer_temperature] ; set extruder final temp
 M109 S[first_layer_temperature] ; wait for extruder final temp
