@@ -1,11 +1,9 @@
-;STARTGCODE
+;https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/Start-Gcode%20for%20Slicers/Super Slicer.txt
 M117 Initializing
-; Set coordinate modes
 G90 ; use absolute coordinates
 M83 ; extruder relative mode
-; Reset speed and extrusion rates
 M220 S100 ; reset speed
-; Set initial warmup temps
+; Set temps 200
 M117 Nozzle preheat
 M104 S200 ; preheat extruder to no ooze temp
 M140 S[first_layer_bed_temperature] ; set bed temp
@@ -13,7 +11,8 @@ M190 S[first_layer_bed_temperature] ; wait for bed final temp
 ; Home
 M117 Homing
 G28 ; home all with default mesh bed level
-; Final warmup routine
+BED_MESH_PROFILE LOAD=default
+SET_GCODE_OFFSET Z=0.0
 M117 Final warmup
 M104 S[first_layer_temperature] ; set extruder final temp
 M109 S[first_layer_temperature] ; wait for extruder final temp

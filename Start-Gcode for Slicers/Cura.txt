@@ -1,5 +1,5 @@
-;Start-gcode
-
+;https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/Start-Gcode%20for%20Slicers/Cura.txt
+M117 Initializing
 G21 ; millimeter units
 G90 ; absolute coordinates
 M82 ; E absolute
@@ -10,6 +10,8 @@ M109 S{material_print_temperature}
 G28 ; home axis
 SAVE_GCODE_STATE
 RESTORE_GCODE_STATE
+BED_MESH_PROFILE LOAD=default
+SET_GCODE_OFFSET Z=0.0
 ; Lower nozzle and move to start position
 G1 Z150 F4800
 G1 X-130 Y0 Z0.4 F3000
@@ -21,5 +23,4 @@ G92 E0
 G1 E-0.8 F1800
 G0 Z0.5
 G1 E0 F300
-
-;SET_PRESSURE_ADVANCE ADVANCE=0.0
+M117 Preparing to print

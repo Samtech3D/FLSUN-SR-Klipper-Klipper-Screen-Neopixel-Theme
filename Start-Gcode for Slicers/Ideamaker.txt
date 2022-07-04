@@ -1,5 +1,5 @@
-;Start Gcode
-
+https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/Start-Gcode%20for%20Slicers/Ideamaker.txt
+M117 Initializing
 G21 ; millimeter units
 G90 ; absolute coordinates
 M82 ; E absolute
@@ -9,6 +9,7 @@ G1 Z150 F4800
 G1 X-130 Y0 Z0.4 F3000
 G92 E0
 BED_MESH_PROFILE LOAD=default
+SET_GCODE_OFFSET Z=0.0
 ; Extrude about 40 mm by printing a 90 degree arc
 G3 X0 Y-100 I120 Z0.5 E40 F1000
 ; Retract and move nozzle up
