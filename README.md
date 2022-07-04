@@ -1,13 +1,13 @@
 If you like my Work Buy Me a Coffee! 🌹❤😍💙
 
-[ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Paypal.png) ](https://www.paypal.me/samiartmedia)
+[ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/Paypal.png) ](https://www.paypal.me/samiartmedia)
 
 **This repository contains settings for Klipper-Klipper screen and neopixel for FLSUN Super Racer with the necessary scripts and macros using robin nano V3 Motherboard.**<br /><br />
 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/repository-flsun.png" />
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/repository-flsun.png" />
 
 ## References
-<img align="center" width=100 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/klipper.png" />
+<img align="center" width=100 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/klipper.png" />
 
 - https://www.klipper3d.org/
 - https://github.com/th33xitus/kiauh
@@ -49,7 +49,7 @@ git clone https://github.com/th33xitus/kiauh.git
     - klipperScreen.conf
     - macros.cfg
     - led_progress.cfg (if you have neopixel installed) 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Import_files.jpg" />   
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/Import_files.jpg" />   
 
 ### Build firmware and flash your motherboard
 - Open ssh to compile the microcontroller code, start by running these commands  
@@ -67,7 +67,7 @@ make menuconfig
   ### Clock Reference (8 MHz crystal)  ---> 
   ### Communication interface (USB (on PA11/PA12))  --->
 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/robin%20nanoV3%20Klipper.PNG" />
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/robin%20nanoV3%20Klipper.PNG" />
 - Press "Q" to exit, and then "Y" to save then run make to flashing image for your printer motherboard.
 
 
@@ -85,7 +85,7 @@ make
 
 - Open WinSCP App "https://winscp.net/eng/download.php"then connect with your raspberry pi Ip and navigate to:
 - /home/pi/klipper/out
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/winscp.PNG" />
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/winscp.PNG" />
 
   - copy and paste "klipper.bin"to your desktop and change the name to "Robin_nano_v3.bin"
   - format your SD card (attention it is not the one which is in the raspberry) use 32 bit 4096ko then paste"Robin_nano_v3.bin" in your sd card
@@ -105,7 +105,7 @@ It should report something similar to the following:
 ```
    - Each printer have a unique serial
    - Copy your serial then paste it in printer.cfg 
-<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/mcu.PNG" />
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/mcu.PNG" />
 
 ```
 [mcu]
@@ -138,7 +138,7 @@ restart_method: command
   - When you finish running `Z_OFFSET_APPLY_PROBE` to save the new z-offset. `SAVE_CONFIG`
   - If you still have problem on your Z-offset , after G28 add on your Z-offset value to your Start-Gcode 
     `SET_GCODE_OFFSET Z=0.0`Ex:`SET_GCODE_OFFSET Z=0.35`
-  <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/imgaes/Z-offset%20update.PNG" />  
+  <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/Z-offset%20update.PNG" />  
 
 
 
