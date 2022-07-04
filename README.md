@@ -18,7 +18,7 @@ If you like my Work Buy Me a Coffee! 🌹❤😍💙
 
 ## Hardware
 - The recommended hardware is a Raspberry Pi 2, Raspberry Pi 3, or Raspberry Pi 4 https://www.klipper3d.org/FAQ.html
-- This install based on MKS Robin Nano V3.0 with tmc2209 stepper drivers and Raspberry Pi4 Touchscreen Display  "Work in Progress for other Boards."
+- This installation is based on MKS Robin Nano V3.0 with tmc2209 stepper drivers and Raspberry Pi4 Touchscreen Display  "Work in Progress for other Boards."
 - Raspberry Pi 4 Touchscreen Display https://klipperscreen.readthedocs.io/en/latest/Hardware/
 - ADXL 345 for input shaper test (optional) https://www.klipper3d.org/Measuring_Resonances.html
 
