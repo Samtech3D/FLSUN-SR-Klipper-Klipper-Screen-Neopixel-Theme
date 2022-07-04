@@ -136,7 +136,9 @@ restart_method: command
 ## 4 - Print 1st layer test use"1st_layer_test0.2.gcode" [ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/STL/1st_layer_test0.2.gcode) ] 
   - Adjust your z-offset while printing 
   - When you finish running `Z_OFFSET_APPLY_PROBE` to save the new z-offset. `SAVE_CONFIG`
-
+  - If you still have problem on your Z-offset , after G28 add on your Z-offset value to your Start-Gcode 
+    `SET_GCODE_OFFSET Z=0.0`Ex:`SET_GCODE_OFFSET Z=0.35`
+    
 
 
 
