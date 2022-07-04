@@ -26,7 +26,7 @@ If you like my Work Buy Me a Coffee! 🌹❤😍💙
 ## Installation
 - Prepping your OS image (I'm using raspbian buster version to use omx-player on startup to run my splash  screen ).
 - Find the Raspberry Pi IP (you can use fing app on your phone).
-- Easy way to install klipper with Kiahu https://github.com/th33xitus/kiauh
+- Easy way to install klipper with Kiauh https://github.com/th33xitus/kiauh
     - You need to install git first so run on ssh`sudo apt-get install git -y`.
     - After git is installed, use the following commands in the given order to download and execute the script:
 
@@ -128,11 +128,11 @@ restart_method: command
    - when you got the right z-offset, run `ACCEPT` then `SAVE_CONFIG` "or ABORT command  To stop the calibration procedure".
 ## 2 - DELTA_CALIBRATE  
   - Home
-  - prob mast be plugin
+  - prob mast be plugged
   - Run `DELTA_CALIBRATE` wait until finish then `SAVE_CONFIG`
 ## 3 - BED_MESH_CALIBRATE
   - Home
-  - prob mast be plugin
+  - prob mast be plugged
   - Run `BED_MESH_CALIBRATE` wait until finish then `SAVE_CONFIG`
 ## 4 - Print 1st layer test use"1st_layer_test0.2.gcode" [ ![Download](https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/STL/1st_layer_test0.2.gcode) ] 
   - Adjust your z-offset while printing 
@@ -141,7 +141,16 @@ restart_method: command
     `SET_GCODE_OFFSET Z=0.0`Ex:`SET_GCODE_OFFSET Z=0.35`
   <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/Z-offset%20update.PNG" />  
 
+### Install Samtech3d Themes For Klipper Screen
+  - Navigate to  `/home/pi/KlipperScreen/styles` usin WinSCP App and drag and drop "Samtech-red & Samtech-blue" folders
+  - In Klipper Screen Go to Configuration/settings/scroll down to Icon Theme "Samtech-red & Samtech-blue"
 
+<img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/config.PNG" />
+<img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/screen parametres.PNG" />
+<img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/icon theme.PNG" />
+
+### Neopixel Work In Progress
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/neopixel2" />
 
 
 
