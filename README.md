@@ -15,6 +15,7 @@ If you like my Work Buy Me a Coffee! 🌹❤😍💙
 - https://www.klipper3d.org/Pressure_Advance.html
 - https://www.klipper3d.org/Resonance_Compensation.html
 - https://www.klipper3d.org/Measuring_Resonances.html
+- https://github.com/digitalninja-ro/klipper-neopixel
 
 ## Hardware
 - The recommended hardware is a Raspberry Pi 2, Raspberry Pi 3, or Raspberry Pi 4 https://www.klipper3d.org/FAQ.html
