@@ -142,7 +142,7 @@ restart_method: command
   <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/Z-offset%20update.PNG" />  
 
 ### Install Samtech3d Themes For Klipper Screen
-  - Navigate to  `/home/pi/KlipperScreen/styles` usin WinSCP App and drag and drop "Samtech-red & Samtech-blue" folders
+  - Navigate to  `/home/pi/KlipperScreen/styles` using WinSCP App then drag and drop "Samtech-red & Samtech-blue" folders
   - In Klipper Screen Go to Configuration/settings/scroll down to Icon Theme "Samtech-red & Samtech-blue"
 
 <img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/config.PNG" />
