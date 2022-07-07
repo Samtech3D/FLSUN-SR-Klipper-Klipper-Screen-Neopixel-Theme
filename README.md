@@ -24,7 +24,9 @@ If you like my Work Buy Me a Coffee! 🌹❤😍💙
 - ADXL 345 for input shaper test (optional) https://www.klipper3d.org/Measuring_Resonances.html
 
 ## Installation
-- Prepare your OS image (I'm using Raspberry Pi OS Legacy (Buster version) to use omx-player to run my splash screen on startup). https://www.raspberrypi.com/software/
+- Prepare your OS image (I'm using Raspberry Pi OS Legacy (Buster version) to use omx-player to run my splash screen on startup). https://www.raspberrypi.com/software/ , or you can use Raspberry PI Imager
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/buster-version.jpg" />
+ 
 - Find the Raspberry Pi IP (you can use fing app on your phone).
 - Easy way to install Klipper with Kiauh: https://github.com/th33xitus/kiauh
     - You need to install git first, on SSH run this command: `sudo apt-get install git -y`.
