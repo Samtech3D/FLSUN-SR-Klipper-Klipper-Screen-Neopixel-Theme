@@ -152,5 +152,148 @@ restart_method: command
 <img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/screen parametres.PNG" />
 <img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/icon theme.PNG" />
 
-### Neopixel Work In Progress
+### Neopixel 
+
+  - Add `led_progress.cfg` then included in your printer.cfg `[include led_progress.cfg]`
+
+  - Add this lines to your printer.cfg
+
+  ```
+  [neopixel neo]
+  pin: PB2
+  chain_count:15
+  color_order: GRB
+  initial_RED: 0.0
+  initial_GREEN: 0.0
+  initial_BLUE: 0.0
+  initial_WHITE: 0.0
+
+  ```
+  - Add this lines to your KlipperScreen.conf
+
+  ```
+#####################################################
+########## My Klipper Screen Neopixel  ##############
+#####################################################
+
+[menu __main Lights] #Lights
+name: Lights
+icon: light
+
+[menu __main Lights Lights_On]
+name: Lights On
+icon: light
+method: printer.gcode.script
+params: {"script":"neopixel_on"}
+[menu __main Lights Lights_Off]
+name: Lights Off
+icon: light
+method: printer.gcode.script
+params: {"script":"neopixel_off"}
+[menu __main Lights blue]
+name: blue
+icon: lightB
+method: printer.gcode.script
+params: {"script":"blue_on"}
+
+[menu __main Lights red]
+name: red
+icon: lightR
+method: printer.gcode.script
+params: {"script":"red_on"}
+[menu __main Lights green]
+name: green
+icon: lightG
+method: printer.gcode.script
+params: {"script":"green_on"}     
+
+[menu __main Lights extruder_temp]
+name: Glow
+icon: extruder
+method: printer.gcode.script
+params: {"script":"extrudertemp"}  
+[menu __main Lights extruder_progress]
+name: Progression
+icon: extruder
+method: printer.gcode.script
+params: {"script":"extruderprogress"}  
+
+[menu __main Lights bedtemp]
+name: Glow
+icon: bed
+method: printer.gcode.script
+params: {"script":"bedtemp"}  
+[menu __main Lights bedprogress]
+name: Progression
+icon: bed
+method: printer.gcode.script
+params: {"script":"bedprogress"}  
+[menu __main Lights percentprogress]
+name: Progression
+icon: percentage
+method: printer.gcode.script
+params: {"script":"percentprogress"}  
+[menu __main Lights percentglow]
+name: Glow
+icon: percentage
+method: printer.gcode.script
+params: {"script":"percentglow"}  
+[menu __main Lights speedprogress]
+name: Progression
+icon: speed+
+method: printer.gcode.script
+params: {"script":"speedprogress"} 
+```
+ - Add this lines to your macros.cfg
+
+ ```
+#############################################
+######### NeoPixel By Samtech 3D#############
+#############################################
+[gcode_macro neopixel_on]
+gcode:
+          SET_LED LED=neo RED=1 GREEN=1 BLUE=1
+[gcode_macro neopixel_off]
+gcode:
+          NEOPIXEL_DISPLAY LED="neo" TYPE=clear
+          
+[gcode_macro blue_on]
+gcode:
+          SET_LED LED=neo RED=0 GREEN=0 BLUE=1
+[gcode_macro red_on]
+gcode:
+          SET_LED LED=neo RED=1 GREEN=0 BLUE=0   
+[gcode_macro green_on]
+gcode:
+          SET_LED LED=neo RED=00 GREEN=1 BLUE=0  
+[gcode_macro extrudertemp]
+gcode:
+          neopixel_display LED=neo TYPE=extruder_temp MODE=glow
+[gcode_macro extruderprogress]
+gcode:
+          neopixel_display LED=neo TYPE=extruder_temp MODE=progress     
+
+[gcode_macro bedtemp]
+gcode:
+          neopixel_display LED=neo TYPE=bed_temp MODE=glow  
+[gcode_macro bedprogress]
+gcode:
+          neopixel_display LED=neo TYPE=bed_temp MODE=progress          
+[gcode_macro percentprogress]
+gcode:
+          neopixel_display LED=neo TYPE=print_percent  MODE=progress        
+[gcode_macro percentglow]
+gcode:
+          neopixel_display LED=neo TYPE=print_percent  MODE=glow   
+[gcode_macro speedprogress]
+gcode:
+          neopixel_display LED=neo TYPE=printer_speed    MODE=progress  
+
+[gcode_macro speedglow]
+gcode:
+          neopixel_display LED=neo TYPE=printer_speed    MODE=glow 
+
+```
 <img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/neopixel2.jpg" />
+  
+

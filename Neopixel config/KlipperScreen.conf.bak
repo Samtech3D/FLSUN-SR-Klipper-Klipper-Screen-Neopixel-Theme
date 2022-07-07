@@ -9,7 +9,7 @@ language: fr
 z_babystep_values: 0.1, 0.05, 0.025, 0.01, 0.005 
 
 #####################################################
-########## My Klipper Screen Nesopixel  #############
+########## My Klipper Screen Bottons  ###############
 #####################################################
 [menu __main Lights] #Lights
 name: Lights
