@@ -152,7 +152,13 @@ restart_method: command
 <img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/screen parametres.PNG" />
 <img align="center" width=600 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/icon theme.PNG" />
 
-### Neopixel 
+### Neopixel Installation
+
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/MKS_Robin_Nano_V3_led.jpg" />
+
+Or 
+
+<img align="center" width=800 src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/MKS_Robin_Nano_V3_led2.jpg" />
 
   - Add `led_progress.cfg` then included in your printer.cfg `[include led_progress.cfg]`
 
