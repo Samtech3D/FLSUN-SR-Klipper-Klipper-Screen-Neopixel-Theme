@@ -39,6 +39,8 @@ git clone https://github.com/th33xitus/kiauh.git
 
 ./kiauh/kiauh.sh
 ```
+<img align="center" src="https://github.com/Samtech3D/FLSUN-SR-Klipper-Klipper-Screen-Neopixel-Theme/blob/main/images/kiauh klipper.PNG" />
+
 ### Install with Kiauh script in the following order:
   #### 1.Klipper
   #### 2.Moonraker
